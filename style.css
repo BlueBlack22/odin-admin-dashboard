@@ -4,4 +4,36 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 20fr;
+}
+
+.sidebar > * {
+    border: 1px solid red;
+}
+
+.sidebar {
+    background-color: lightblue;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 5fr;
+    gap: 20px;
+}
+
+.header {
+    background-color: antiquewhite;
+}
+
+.user {
+    background-color: aquamarine;
+}
+
+.content {
+    background-color: grey;
 }
