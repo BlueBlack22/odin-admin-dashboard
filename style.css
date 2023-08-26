@@ -2,7 +2,7 @@ html {
     height: 100vh;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -26,12 +26,54 @@ body {
     gap: 20px;
 }
 
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#logo-icon {
+    height: 50px;
+    width: auto;
+}
+
 .header {
     background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 100px;
+}
+
+.header-left {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.user-icon {
+    height: 50px;
+    width: auto;
 }
 
 .user {
     background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.user-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.user-icon-big {
+    grid-row: 1 / 3;
+    height: 100px;
+    width: auto;
 }
 
 .content {
