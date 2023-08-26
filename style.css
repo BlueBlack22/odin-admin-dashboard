@@ -97,7 +97,8 @@ input {
 }
 
 .small-icon,
-.sidebar-icon {
+.sidebar-icon,
+.card-btn {
     height: 25px;
     width: auto;
 }
@@ -163,7 +164,7 @@ input {
 }
 
 .content {
-    background-color: grey;
+    background-color: rgb(168, 204, 245);
     display: grid;
     grid-template-columns: 6fr 2fr;
     grid-template-rows: 4vh 1fr;
@@ -200,6 +201,14 @@ input {
 
 .card-header {
     font-weight: 600;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    align-items: end;
+    padding: 30px;
 }
 
 .content-right {
